@@ -27,7 +27,7 @@ Um aplicativo de previsão do tempo desenvolvido em **React**, que busca informa
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/weather-app.git
+   git clone https://github.com/seu-usuario/weather-app.git](https://github.com/R4ffz/previsaodotempo)
    cd weather-app
    ```
 
@@ -91,9 +91,7 @@ weather-app/
 
 ### **👤 Autor**
 
-- **Nome**: Rafael Barros Cabral  
-- **LinkedIn**: [Seu LinkedIn](https://www.linkedin.com)  
-- **GitHub**: [Seu GitHub](https://github.com)  
+- **Nome**: Rafael Barros Cabral   
 
 ---
 
