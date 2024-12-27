@@ -1,0 +1,149 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    height: 100vh;
+    background-image: url("./assets/imagemfundo.jpg");
+    background-size: cover; /* Cobrir toda a tela */
+    background-repeat: no-repeat;
+    background-position: center; /* Centralizar a imagem */
+    color: #fff; /* Deixar os textos brancos para contraste */
+  }
+  
+  .app {
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto; /* Centralizar o card */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+/* Centraliza a div dos botões */
+.buttons-container {
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  gap: 10px; /* Espaçamento entre os botões */
+  margin-top: 10px; /* Espaço acima da linha de botões */
+}
+
+/* Ajusta o input para centralizar */
+input {
+  display: block;
+  margin: 0 auto; /* Centraliza o input */
+  padding: 10px;
+  width: 80%; /* Largura maior para melhor visualização */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos botões */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+  .weather-info {
+    margin-top: 20px;
+  }
+  
+  .weather-info h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .weather-info p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+  }
+  
+  .icon {
+    font-size: 4rem;
+    margin: 10px 0;
+  }
+
+  .forecast {
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr)); /* 2 colunas */
+    gap: 15px; /* Espaçamento entre os cards */
+    justify-items: center; /* Centraliza os itens na coluna */
+  }
+  
+  .forecast-item:first-child {
+    grid-column: span 2; /* O primeiro card ocupa duas colunas */
+    justify-self: center; /* Centraliza horizontalmente */
+  }
+  
+  .forecast-item {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 150px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .forecast-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .forecast-item p {
+    margin: 5px 0;
+  }
+  
+  
+  
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .app {
+      width: 95%;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    input,
+    button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
